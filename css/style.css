@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*nền đen*/
+body {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+section, .container, .navbar, .tab-content {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.navbar, .scrollspy-example {
+  background-color: #111 !important;
+}
+
+.nav-link, .navbar-brand, h1, h2, h3, h4, p, span {
+  color: #fff !important;
+}
+
+.progress-bar {
+  color: #000 !important;
+}
+
+/* nút bấm */
+.btn-primary {
+  background-color: #333;
+  border-color: #444;
+}
+.btn-primary:hover {
+  background-color: #555;
+}
+
+/* chỉnh lightbox viền trắng */
+.lb-data .lb-caption {
+  color: white !important;
+}
+
+
+.overlay-black {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 742px;
+  background: rgba(0, 0, 0, 0.35); /* lớp phủ đen 35% */
+  z-index: 1;
+}
+
+/* Đảm bảo overlay-content nằm trên overlay-black */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+/*xong nền*/
+
+
+/*mau cua icon*/
+
+.text-primary {
+  color: #B31010 !important;
+}
+
+.btn-primary {
+  background-color: #B31010 !important;
+  border-color: #B31010 !important;
+}
+
+.btn-primary:hover {
+  background-color: #D91E1E !important;
+  box-shadow: 0 0 15px 5px rgba(179, 16, 16, 0.6);
+  transform: scale(1.05);
+}
+
+/*xong mau chu*/
+.btn:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+.video-hero {
+  width: 100%;
+  height: 100vh; /* chỉ bằng đúng chiều cao màn hình */
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;     /* đúng chiều rộng thiết bị */
+  height: 100vh;    /* đúng chiều cao thiết bị */
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+section{
+	min-height: 600px
+}
+.navbar .navbar-brand{
+	color: #3367F5; font-size: 20px; font-weight: bold
+}
+.navbar .navbar-brand:hover{
+	color: #E00509
+}
+@media (max-width:470px) {
+	.navbar{
+		display: flex; justify-content: center
+	}
+	#scrollspyHeading1{
+		padding-top: 50px
+	}
+}
+.navbar-brand .mea-culpa-regular,
+.navbar-brand .mea-culpa-regular:focus,
+.navbar-brand .mea-culpa-regular:active,
+.navbar-brand .mea-culpa-regular:visited,
+.navbar-brand .mea-culpa-regular:hover {
+  color: #B31010 !important;
+}
+.navbar-brand {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #B31010 !important;
+}
+
+.navbar-brand .mea-culpa-regular {
+  color: #B31010 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover .mea-culpa-regular {
+  color: #fff !important;
+}
+/*sua phan lech*/
+
+
+/*time line*/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 25px;
+  margin-right: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: calc( 100% - 75px );
+  float: right;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #ccc;
+  border-left: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-right: 14px solid #fff;
+  border-left: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  margin-right: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-right-width: 0;
+  border-left-width: 15px;
+  right: -15px;
+  left: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-right-width: 0;
+  border-left-width: 14px;
+  right: -14px;
+  left: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+.timeline-body {
+    display: none;
+}
+
+
+
+/* Icon mạng xã hội */
+a i.fab {
+  background-color: #B31010;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover icon sẽ sáng lên */
+a i.fab:hover {
+  background-color: #D91E1E;
+  box-shadow: 0 0 10px rgba(179, 16, 16, 0.8);
+  transform: scale(1.1);
+}
+/*mau do cho hover*/
+
+.nav-pills .nav-link.active {
+  background-color: #B31010 !important;
+  color: white !important;
+  box-shadow: 0 0 10px rgba(179, 16, 16, 0.5);
+}
+
+
+/* Hiệu ứng đổi màu chữ phần giới thiệu */
+section:nth-of-type(1) h1.text-primary:hover,
+section:nth-of-type(1) .mea-culpa-regular.text-primary:hover {
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+section:nth-of-type(1) h2 span:not(.text-primary):hover {
+  color: #B31010 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link {
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #B31010 !important;
+  color: #fff !important;
+  box-shadow: 0 0 10px rgba(179, 16, 16, 0.5);
+}
+
